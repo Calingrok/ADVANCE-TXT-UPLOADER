@@ -73,7 +73,9 @@ async def show_random_emojis(message):
     return emoji_message
 
 # Define the owner's user ID
-OWNER_ID = 6410653364 # Replace with the actual owner's user ID
+import os
+OWNER_ID = int(os.environ.get("OWNER_ID", 0))
+ # Replace with the actual owner's user ID
 
 # Initialize the database instance globally
 # This will attempt to connect to MongoDB when the bot starts
