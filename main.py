@@ -83,7 +83,7 @@ except Exception as e:
     logging.error(f"Failed to initialize database: {e}")
     sys.exit(1) # Exit if database connection fails
 
-AUTH_CHANNEL = -1002752608747
+AUTH_CHANNEL = -1004341753668
 
 # Function to check if a user is authorized
 def is_authorized(user_id: int) -> bool:
