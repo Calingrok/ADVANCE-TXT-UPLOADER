@@ -1,5 +1,23 @@
 # Don't Remove Credit Tg - @Tushar0125
 # Ask Doubt on telegram @Tushar0125
+import os
+from flask import Flask
+from threading import Thread
+
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    return "Bot is running!"
+
+def run():
+    app.run(host='0.0.0.0', port=8080)
+
+if __name__ == "__main__":
+    t = Thread(target=run)
+    t.start()
+    # Yahan se aapka bot ka asli code shuru hoga
+    # jaise: bot.run()
 
 import os
 import re
